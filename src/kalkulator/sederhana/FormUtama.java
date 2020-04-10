@@ -30,7 +30,7 @@ public class FormUtama extends javax.swing.JFrame {
     String simbol_terakhir = "";
     boolean ekspresi_terakhir_desimal = false;
     
-    private void tambah_expresi(String simbol){
+    private void tambah_simbol(String simbol){
         // Method ini berguna untuk membuat ekspresi dari input yang dimasukkkan
         // Algoritma in bertujuan untuk menghindari kesalahan pemasukan ekspresi saat di evaluasi selanjutnya
         boolean berhasil_ditambahkan = false;
@@ -511,7 +511,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_7MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_7MouseReleased
         tbl_7.setBackground(new Color(68, 68, 68));
-        tambah_expresi("7");
+        tambah_simbol("7");
     }//GEN-LAST:event_tbl_7MouseReleased
 
     private void tbl_7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_7MousePressed
@@ -524,12 +524,12 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_8MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_8MouseReleased
         tbl_8.setBackground(new Color(68, 68, 68));
-        tambah_expresi("8");
+        tambah_simbol("8");
     }//GEN-LAST:event_tbl_8MouseReleased
 
     private void tbl_9MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_9MouseReleased
         tbl_9.setBackground(new Color(68, 68, 68));
-        tambah_expresi("9");
+        tambah_simbol("9");
     }//GEN-LAST:event_tbl_9MouseReleased
 
     private void tbl_9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_9MousePressed
@@ -538,7 +538,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_4MouseReleased
         tbl_4.setBackground(new Color(68, 68, 68));
-        tambah_expresi("4");
+        tambah_simbol("4");
     }//GEN-LAST:event_tbl_4MouseReleased
 
     private void tbl_4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_4MousePressed
@@ -547,7 +547,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_5MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_5MouseReleased
         tbl_5.setBackground(new Color(68, 68, 68));
-        tambah_expresi("5");
+        tambah_simbol("5");
     }//GEN-LAST:event_tbl_5MouseReleased
 
     private void tbl_5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_5MousePressed
@@ -556,7 +556,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_6MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_6MouseReleased
         tbl_6.setBackground(new Color(68, 68, 68));
-        tambah_expresi("6");
+        tambah_simbol("6");
     }//GEN-LAST:event_tbl_6MouseReleased
 
     private void tbl_6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_6MousePressed
@@ -565,7 +565,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_1MouseReleased
         tbl_1.setBackground(new Color(68, 68, 68));
-        tambah_expresi("1");
+        tambah_simbol("1");
     }//GEN-LAST:event_tbl_1MouseReleased
 
     private void tbl_1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_1MousePressed
@@ -574,7 +574,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_2MouseReleased
         tbl_2.setBackground(new Color(68, 68, 68));
-        tambah_expresi("2");
+        tambah_simbol("2");
     }//GEN-LAST:event_tbl_2MouseReleased
 
     private void tbl_2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_2MousePressed
@@ -583,7 +583,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_3MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_3MouseReleased
         tbl_3.setBackground(new Color(68, 68, 68));
-        tambah_expresi("3");
+        tambah_simbol("3");
     }//GEN-LAST:event_tbl_3MouseReleased
 
     private void tbl_3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_3MousePressed
@@ -592,7 +592,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_titikMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_titikMouseReleased
         tbl_titik.setBackground(new Color(68, 68, 68));
-        tambah_expresi(".");
+        tambah_simbol(".");
     }//GEN-LAST:event_tbl_titikMouseReleased
 
     private void tbl_titikMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_titikMousePressed
@@ -601,7 +601,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_0MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_0MouseReleased
         tbl_0.setBackground(new Color(68, 68, 68));
-        tambah_expresi("0");
+        tambah_simbol("0");
     }//GEN-LAST:event_tbl_0MouseReleased
 
     private void tbl_0MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_0MousePressed
@@ -610,7 +610,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_bagiMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_bagiMouseReleased
         tbl_bagi.setBackground(new Color(99, 99, 99));
-        tambah_expresi("÷");
+        tambah_simbol("÷");
     }//GEN-LAST:event_tbl_bagiMouseReleased
 
     private void tbl_bagiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_bagiMousePressed
@@ -637,7 +637,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_kaliMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_kaliMouseReleased
         tbl_kali.setBackground(new Color(99, 99, 99));
-        tambah_expresi("×");
+        tambah_simbol("×");
     }//GEN-LAST:event_tbl_kaliMouseReleased
 
     private void tbl_kaliMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_kaliMousePressed
@@ -646,7 +646,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_minusMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_minusMouseReleased
         tbl_minus.setBackground(new Color(99, 99, 99));
-        tambah_expresi("−");
+        tambah_simbol("−");
     }//GEN-LAST:event_tbl_minusMouseReleased
 
     private void tbl_minusMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_minusMousePressed
@@ -655,7 +655,7 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_plusMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_plusMouseReleased
         tbl_plus.setBackground(new Color(99, 99, 99));
-        tambah_expresi("+");
+        tambah_simbol("+");
     }//GEN-LAST:event_tbl_plusMouseReleased
 
     private void tbl_plusMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_plusMousePressed
@@ -664,11 +664,13 @@ public class FormUtama extends javax.swing.JFrame {
 
     private void tbl_hasilMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_hasilMouseReleased
         tbl_hasil.setBackground(new Color(99, 99, 99));
-        ekspresi.clear();
-        label_ekspresi.setText(label_hasil.getText());
-        ekspresi.add(label_hasil.getText());
-        label_hasil.setText("");
-        tbl_del.setText("CLR");
+        if(tbl_del.getText().equals("DEL")){
+            ekspresi.clear();
+            label_ekspresi.setText(label_hasil.getText());
+            ekspresi.add(label_hasil.getText());
+            label_hasil.setText("");
+            tbl_del.setText("CLR");
+        }
     }//GEN-LAST:event_tbl_hasilMouseReleased
 
     private void tbl_hasilMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_hasilMousePressed
