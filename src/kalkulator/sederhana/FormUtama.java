@@ -9,6 +9,8 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import javax.swing.Icon;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -107,11 +109,11 @@ public class FormUtama extends javax.swing.JFrame {
                     }
 
                 }
-                boolean punya_desimal = (((int)hasil) - hasil) != 0;
-                if(punya_desimal){
+                boolean punya_desimal = hasil % 1 == 0;
+                if(!punya_desimal){
                     label_hasil.setText(String.valueOf(hasil));
                 }else{
-                    label_hasil.setText(String.valueOf((int)hasil)); 
+                    label_hasil.setText(String.valueOf((long)hasil)); 
                 }
             }
         }else{
@@ -168,7 +170,6 @@ public class FormUtama extends javax.swing.JFrame {
         tbl_bagi = new javax.swing.JLabel();
         tbl_del = new javax.swing.JLabel();
         tbl_kali = new javax.swing.JLabel();
-        tbl_none_2 = new javax.swing.JLabel();
         tbl_minus = new javax.swing.JLabel();
         tbl_none_3 = new javax.swing.JLabel();
         tbl_plus = new javax.swing.JLabel();
@@ -176,9 +177,10 @@ public class FormUtama extends javax.swing.JFrame {
         label_ekspresi = new javax.swing.JLabel();
         label_hasil = new javax.swing.JLabel();
         background_putih = new javax.swing.JLabel();
+        tbl_none_4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Kalkulator Tiruan Android");
+        setTitle("Kalkulator Android Tiruan");
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(java.awt.Color.white);
         setResizable(false);
@@ -332,10 +334,19 @@ public class FormUtama extends javax.swing.JFrame {
         getContentPane().add(tbl_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 110, 70));
 
         tbl_none_1.setBackground(new java.awt.Color(68, 68, 68));
-        tbl_none_1.setFont(new java.awt.Font("Open Sans", 0, 30)); // NOI18N
+        tbl_none_1.setFont(new java.awt.Font("Open Sans", 0, 17)); // NOI18N
         tbl_none_1.setForeground(new java.awt.Color(255, 255, 255));
         tbl_none_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tbl_none_1.setText("About");
         tbl_none_1.setOpaque(true);
+        tbl_none_1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tbl_none_1MousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                tbl_none_1MouseReleased(evt);
+            }
+        });
         getContentPane().add(tbl_none_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 110, 70));
 
         tbl_0.setBackground(new java.awt.Color(68, 68, 68));
@@ -418,13 +429,6 @@ public class FormUtama extends javax.swing.JFrame {
         });
         getContentPane().add(tbl_kali, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 110, 70));
 
-        tbl_none_2.setBackground(new java.awt.Color(99, 99, 99));
-        tbl_none_2.setFont(new java.awt.Font("Open Sans", 0, 18)); // NOI18N
-        tbl_none_2.setForeground(new java.awt.Color(255, 255, 255));
-        tbl_none_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tbl_none_2.setOpaque(true);
-        getContentPane().add(tbl_none_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 110, 70));
-
         tbl_minus.setBackground(new java.awt.Color(99, 99, 99));
         tbl_minus.setFont(new java.awt.Font("Open Sans", 0, 30)); // NOI18N
         tbl_minus.setForeground(new java.awt.Color(255, 255, 255));
@@ -501,6 +505,18 @@ public class FormUtama extends javax.swing.JFrame {
         background_putih.setMinimumSize(new java.awt.Dimension(550, 120));
         background_putih.setOpaque(true);
         getContentPane().add(background_putih, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 120));
+
+        tbl_none_4.setBackground(new java.awt.Color(99, 99, 99));
+        tbl_none_4.setFont(new java.awt.Font("Open Sans", 0, 18)); // NOI18N
+        tbl_none_4.setForeground(new java.awt.Color(255, 255, 255));
+        tbl_none_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tbl_none_4.setOpaque(true);
+        tbl_none_4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                tbl_none_4MouseReleased(evt);
+            }
+        });
+        getContentPane().add(tbl_none_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 110, 70));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -677,6 +693,20 @@ public class FormUtama extends javax.swing.JFrame {
         tbl_hasil.setBackground(new Color(111, 111, 111));
     }//GEN-LAST:event_tbl_hasilMousePressed
 
+    private void tbl_none_4MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_none_4MouseReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tbl_none_4MouseReleased
+
+    private void tbl_none_1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_none_1MousePressed
+        tbl_none_1.setBackground(new Color(80, 80, 80));
+    }//GEN-LAST:event_tbl_none_1MousePressed
+
+    private void tbl_none_1MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_none_1MouseReleased
+        tbl_none_1.setBackground(new Color(68, 68, 68));
+        Icon icon = null;
+        JOptionPane.showMessageDialog(this, "Made with Patience by\n10118277\nMirza MY Humayung", "Tentang", HEIGHT, icon);
+    }//GEN-LAST:event_tbl_none_1MouseReleased
+
     /**
      * @param args the command line arguments
      */
@@ -732,8 +762,8 @@ public class FormUtama extends javax.swing.JFrame {
     private javax.swing.JLabel tbl_kali;
     private javax.swing.JLabel tbl_minus;
     private javax.swing.JLabel tbl_none_1;
-    private javax.swing.JLabel tbl_none_2;
     private javax.swing.JLabel tbl_none_3;
+    private javax.swing.JLabel tbl_none_4;
     private javax.swing.JLabel tbl_plus;
     private javax.swing.JLabel tbl_titik;
     // End of variables declaration//GEN-END:variables
